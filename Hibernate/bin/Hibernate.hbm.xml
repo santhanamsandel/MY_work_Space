@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="model.Student" table="Student_table">  
+    <id name="id">
+      
+     <generator class="assigned"></generator>  
+    </id>  
+            
+    <property name="name"></property>  
+   <property name="marks"></property> 
+            
+  </class>  
+  
+    <class name="model.Customer" table="Customer_table">  
+    <id name="cutId" type="int" column="Customer_id">
+      
+     <generator class="assigned"></generator>  
+    </id>  
+            
+    <property name="name" length="20" column="Customer_name" type="string"></property>  
+   <property name="add" length ="20" column="Customer_address" type="string"></property> 
+            
+  </class>
+   </hibernate-mapping>
+   
